@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Assignment-49-52
+
+      <!--Create a signup form and display form data in your web
+page on submission.-->
+       
+<button onclick="document.getElementById('btnid').style.display='block'">Sign Up</button>
+
+<div id="btnid" class="modal">
+  <span onclick="document.getElementById('btnid').style.display='none'" class="close" title="Close Modal">Close</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <label for="repeat-password"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="repeat-password" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('btnid').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signup">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>  
+
+<!-- When user clicks on “Read more” button, full detail of that particular item will be
+ displayed. -->
+
+<p id="pera">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="javascript:void(0)" onclick="readmore()" >read more</a></p>
+
+<div id="tab">
+    <table>
+        <tr>
+            <td>Index</td>
+            <td>Name</td>
+            <td>GR#</td>
+            <td></td>
+        </tr>
+        <tr id="xyz"><td>0</td>
+            <td>Abiha</td>
+            <td>1101</td>
+            <td><button id="bt" onclick="delfunction()">Delete</button></td>
+            <td><button id="bt-E" onclick="editfunction()">Edit</button></td></tr>
+        <tr id="xyz"><td>1</td>
+            <td>Warda</td>
+            <td>1102</td>
+            <td><button id="bt" onclick="delfunction()">Delete</button></td>
+            <td><button id="bt-E" onclick="editfunction()">Edit</button></td></tr>
+        <tr id="xyz"><td>2</td>
+            <td>Ainy</td>
+            <td>1103</td>
+            <td><button id="bt" onclick="delfunction()">Delete</button></td>
+            <td><button id="bt-E" onclick="editfunction()">Edit</button></td></tr>
+        <tr id="xyz"><td>3</td>
+            <td>Hafsa</td>
+            <td>1104</td>
+            <td><button id="bt" onclick="delfunction()">Delete</button></td>
+            <td><button id="bt-E" onclick="editfunction()">Edit</button></td></tr>
+        <tr id="xyz"><td>4</td>
+            <td>Maria</td>
+            <td>1105</td>
+            <td><button id="bt" onclick="delfunction()">Delete</button></td>
+            <td><button id="bt-E" onclick="editfunction()">Edit</button></td></tr>
+        <tr id="xyz"><td>5</td>
+            <td>Anum</td>
+            <td>1106</td>
+            <td><button id="bt" onclick="delfunction()">Delete</button></td>
+            <td><button id="bt-E" onclick="editfunction()">Edit</button></td></tr>
+        <tr id="xyz"><td>6</td>
+            <td>Alia</td>
+            <td>1107</td>
+            <td><button id="bt" onclick="delfunction()">Delete</button></td>
+            <td><button id="bt-E" onclick="editfunction()">Edit</button></td></tr>
+        <tr id="xyz"><td>7</td>
+            <td>Dua</td>
+            <td>1108</td>
+            <td><button id="bt" onclick="delfunction()">Delete</button></td>
+            <td><button id="bt-E" onclick="editfunction()">Edit</button></td></tr>
+        <tr id="xyz"><td>8</td>
+            <td>Arham</td>
+            <td>1109</td>
+            <td><button id="bt" onclick="delfunction()">Delete</button></td>
+            <td><button id="bt-E" onclick="editfunction()">Edit</button></td></tr>
+        <tr id="xyz"><td>9</td>
+            <td>saba</td>
+            <td>1110</td>
+            <td><button id="bt" onclick="delfunction()">Delete</button></td>
+            <td><button id="bt-E" onclick="editfunction()">Edit</button></td></tr>
+
+    </table>
+</div>
+      
+      
+        
+      
+
+    <script src="./app.js">
+        
+    </script>
+</body>
+</html>

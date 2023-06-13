@@ -34,9 +34,9 @@
 // value in browser.
 
  
-let btnAdd = document.querySelector('#add');
-let btnSub = document.querySelector('#sub');
-let input = document.querySelector('input');
+var btnAdd = document.getElementById('add');
+var btnSub = document.getElementById('sub');
+var input = document.getElementById('input');
 
 btnAdd.addEventListener('click' , () =>{
     input.value = parseInt(input.value) + 1;

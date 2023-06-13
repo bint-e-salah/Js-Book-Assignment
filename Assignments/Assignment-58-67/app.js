@@ -27,18 +27,26 @@
 // iv. Fill input value whose element id first-name using javascript.
 // v. Repeat part iv for id ”last-name” and “email”.
 
- var result = document.getElementById("main-content");
- document.getElementsByClassName("render").innerHTML = result;
+  var parent = document.getElementById("main-content").
+  console.log(parent)
+  
+  var children = parent.getElementsByClassName("render");
 
- function myFunction() {
- document.getElementById("f-name").value="Quratulain";
- document.getElementById("l-name").value="Salahuddin";
- document.getElementById("email").value="quratulain@gmail.com";
+  console.log(childern);
+   console.log(document.childNodes[1].childNodes[1].childNodes)
+  for(var i = 0; i< document.childNodes[1].childNodes[1].childNodes.length; i++){
+    console.log(document.childNodes[1].childNodes[1].childNodes)
+  }
 
- }
+  document.getElementById("first-name").value = "Qurat";
+  document.getElementById ("last-name").value = "Salahuddin"
+  document.getElementById("email").value="quratulain@gmail.com";
+
+// }
 
 // 2. use HTML code of question 1 and show the result on browser.
 // i. What is node type of element having id “form-content”.
+// id(form-content) is id os 1st div of main div that has 3 childnodes and div that has form-content id is its second childnode
 // ii. Show node type of element having id “lastName” and its child node.
 // iii. Update child node of element having id “lastName”.
 // iv. Get First and last child of id “main-content”.
